@@ -1,0 +1,206 @@
+{
+  "main": {
+    "id": "ebf8c691d6403fa3",
+    "type": "split",
+    "children": [
+      {
+        "id": "c2a86664f11ea95a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "de403a88feb0b1ee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "User Management.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "User Management"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "47cb09696839ec11",
+    "type": "split",
+    "children": [
+      {
+        "id": "23ac17f68f0aaf06",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7ef78022364c326c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "ae5a5494109b674c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "#linux",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "byCreatedTime"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d965c81007be47b3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e2eec0067b08496f",
+    "type": "split",
+    "children": [
+      {
+        "id": "eb51b8acf9c005d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ba0bcba89984fedc",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Linux Notes.md",
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Linux Notes"
+            }
+          },
+          {
+            "id": "3a9d3a46e54dce61",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Linux Notes.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Linux Notes"
+            }
+          },
+          {
+            "id": "2c2bc24bcab3b72e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "76df8e92efa0a07a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Linux Notes.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Linux Notes"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "de403a88feb0b1ee",
+  "lastOpenFiles": [
+    "Shell Scripting.md",
+    "User Management.md",
+    "Basic Commands.md",
+    "Linux Administration Task/Linux Administration Task.md",
+    "Daily Practice/Homework.md",
+    "pipe command.md",
+    "find command.md",
+    "grep command.md",
+    "Alias.md",
+    "Targets.md",
+    "Runlevels.md",
+    "Vim.md",
+    "File System Hierarchy.md",
+    "permissions.md",
+    "router.md",
+    "find.md",
+    "du commands.md",
+    "new file.md",
+    "Delete History Permanently.md",
+    "ctime mtime atime.md",
+    "word count command.md",
+    "more and less.md",
+    "Daily Practice/Daily Practice To Do.md",
+    "Homework Documentation.md",
+    "Ubuntu 100 Commands.md",
+    "saqq.md",
+    "Daily Practice",
+    "Linux Administration Task",
+    "Pasted image 20250423075520.png",
+    "Basic Commands, Structure"
+  ]
+}
