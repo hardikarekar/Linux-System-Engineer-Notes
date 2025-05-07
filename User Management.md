@@ -111,7 +111,6 @@
 	* Execute
 		* Programs, Scripts, Commands
 		* To enter into a folder
-		* Changes
 * `usermod`
 	* Used to modify an existing user account.
 	* Syntax
