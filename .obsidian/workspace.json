@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#linux",
+                "query": "#netw",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -172,8 +172,9 @@
   },
   "active": "de403a88feb0b1ee",
   "lastOpenFiles": [
-    "Shell Scripting.md",
+    "router.md",
     "User Management.md",
+    "Shell Scripting.md",
     "Basic Commands.md",
     "Linux Administration Task/Linux Administration Task.md",
     "Daily Practice/Homework.md",
@@ -186,7 +187,6 @@
     "Vim.md",
     "File System Hierarchy.md",
     "permissions.md",
-    "router.md",
     "find.md",
     "du commands.md",
     "new file.md",
