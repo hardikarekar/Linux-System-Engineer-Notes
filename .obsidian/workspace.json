@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux Administration Task/Linux Administration Task.md",
+                "file": "Linux Administration Task.md",
                 "mode": "source",
                 "source": false
               },
@@ -88,8 +88,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -184,10 +183,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "de403a88feb0b1ee",
+  "active": "7ef78022364c326c",
   "lastOpenFiles": [
     "Shell Scripting.md",
-    "Linux Administration Task/Linux Administration Task.md",
+    "Linux Administration Task.md",
     "sudoers.md",
     "User Management.md",
     "hard link soft link.md",
