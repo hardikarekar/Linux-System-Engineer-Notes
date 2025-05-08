@@ -12,4 +12,11 @@
 * chmod calculator
 * PAM
 * What is the purpose of Set GID and Set UID
+* Languages to learn
+	* Shell Scripting, Go Lang, Python
+* Shell Scripting
+	* YouTube
+		* Programming Knowledge Channel
+	* Udemy
+* Search `shellscripting+cyberciti`
 * 
