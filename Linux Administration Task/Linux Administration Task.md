@@ -394,4 +394,3 @@ done
 		* Root can still log in.
 	* Create `/etc/nologin` with a message
 		* `echo "System maintenance is in progress. Logins are disabled." > /etc/nologin`
-Blah
