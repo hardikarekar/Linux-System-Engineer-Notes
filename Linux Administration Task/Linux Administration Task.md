@@ -381,4 +381,18 @@ done
 * Disable users with `/sbin/nologin`
 	* Change single user's shell
 		* `usermod -s /sbin/nologin username`
+* `passwd -l`
+	* Used to lock a user account, making it impossible to log in with a password but it does not disable the shell.
+		* `passwd -l gandhar`
+		* It adds a `!` in front of user's hash in `/etc/shadow`.
+	* To unlock a locked account
+		* `passwd -u gandhar`
+* `/etc/nologin`
+	* What is `/etc/nologin`?
+		* If the file `/etc/nologin` exists, all non root users are prevented from logging in.
+		* When they try, they'll see the contents of the file as a message.
+		* Root can still log in.
+	* Create `/etc/nologin` with a message
+		* `echo "System maintenance is in progress. Logins are disabled." > /etc/nologin`
+	
 
