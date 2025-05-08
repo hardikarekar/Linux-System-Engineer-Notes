@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Shell Scripting.md",
+                "file": "sudoers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Shell Scripting"
+              "title": "sudoers"
             }
           }
         ]
@@ -173,19 +173,21 @@
   "active": "de403a88feb0b1ee",
   "lastOpenFiles": [
     "User Management.md",
-    "router.md",
-    "Shell Scripting.md",
-    "Basic Commands.md",
+    "sudoers.md",
+    "hard link soft link.md",
     "Linux Administration Task/Linux Administration Task.md",
+    "Alias.md",
+    "Targets.md",
+    "Vim.md",
+    "File System Hierarchy.md",
+    "Shell Scripting.md",
+    "router.md",
+    "Basic Commands.md",
     "Daily Practice/Homework.md",
     "pipe command.md",
     "find command.md",
     "grep command.md",
-    "Alias.md",
-    "Targets.md",
     "Runlevels.md",
-    "Vim.md",
-    "File System Hierarchy.md",
     "permissions.md",
     "find.md",
     "du commands.md",
@@ -196,8 +198,6 @@
     "more and less.md",
     "Daily Practice/Daily Practice To Do.md",
     "Homework Documentation.md",
-    "Ubuntu 100 Commands.md",
-    "saqq.md",
     "Daily Practice",
     "Linux Administration Task",
     "Pasted image 20250423075520.png",
