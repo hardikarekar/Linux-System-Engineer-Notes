@@ -208,8 +208,16 @@ init 6   # Reboot
 	* Combine with `grep` using pipe
 		* `grep "Jimi" /abc | less`
 * `more` command
-	* Basic usage to view a file
-		* `more /etc/fstab`
+	* View a file page by page
+		* `more filename`
+	* View long command output
+		* `ls -l filename | more`
+	* Start viewing from a specific line
+		* `more +25 filename`
+	* Use with piped command
+		* cat filename | more
+	* Search for a word inside more
+			* `/keyword`
 ## 12a. Create 10 files. Set full permissions & find the same files with `find` command and delete all files.
 * Create a file inside `/tmp`:
 	* `mkdir -p /tmp/testfiles`
@@ -272,6 +280,21 @@ init 6   # Reboot
 	* Change the home directory and also move files
 		* `mv /home/Nichiket /home/NewNichiket`
 		* `chown Nichiket:Nichiket /home/NewNichiket`
+## 39c. Add users in group, change primary and secondary group of a user
+* Add a user to a secondary group
+	* `usermod -aG groupname username`
+		* `aG` means append to group.
+	* Example
+		* `usermod -aG friends gandhar`
+* Change a user's primary group
+	* `usermod -g groupname username`
+		* This replaces the primary group
+	* Example
+		* `usermod -g developers hardik`
+* Set both primary and secondary groups
+	* `usermod -g primarygroup -G group1,group2 username`
+	* Example
+		* `usermod -g staff -G cloud,devops hardik`
 ## 39d. Create user joe without using `useradd`, `adduser` 
 * Create a group for joe
 	* `groudadd joe`
@@ -394,3 +417,25 @@ done
 		* Root can still log in.
 	* Create `/etc/nologin` with a message
 		* `echo "System maintenance is in progress. Logins are disabled." > /etc/nologin`
+## 40d. find last 10 users with awk and head command | compgen | primary | try chfn | chsh | finger commands
+* Get last 10 logged in users 
+	* `last | awk '{print $1}' | head -n 10`
+		* `last` - Shows login history
+		* `awk '{print $1}'` - Extracts the username field.
+		* `head -n 10` - Shows the last 10 user entries.
+* List all users
+	* `compgen -u`
+* Get primary group of a user
+	* `id -gn gandhar`
+* View or change user info
+	* `chfn`
+		* Change full name and info
+			* `chfn gandhar`
+				* Changes user's full name, room number, work phone, etc.
+	* `chsh`
+		* Change login shell
+			* `chsh gandhar`
+				* Changes the default shell for the user.
+* Get user info using `finger` - Ask doubt to Sadhiq (finger command not found; how to install the package)
+	* `finger gandhar`
+

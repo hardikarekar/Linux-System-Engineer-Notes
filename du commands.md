@@ -20,7 +20,7 @@
 		* `du -sm *`
 * Advanced and filtered output
 	* Sort directories by size
-		* `du -sh * | sort -h`
+		* `du -sh --max-depth=1 | sort -hr`
 	* Top 5 largest directories
 		* `du -sh * | sort -hr | head -n 5`
 
