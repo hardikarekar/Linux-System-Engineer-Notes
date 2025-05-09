@@ -49,4 +49,3 @@ cp -rv /opt/* /usr/local/src
 * Cron Scheduler
 	* How to add script in Cron
 		* `crontab -e`
-* 

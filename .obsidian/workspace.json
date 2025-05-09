@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Shell Scripting.md",
+                "file": "MySQL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Shell Scripting"
+              "title": "MySQL"
             }
           }
         ],
@@ -185,13 +185,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4d11d61796298aed",
+  "active": "ae5a5494109b674c",
   "lastOpenFiles": [
+    "Shell Scripting.md",
+    "MySQL.md",
     "Linux Administration Task.md",
     "du commands.md",
     "Daily Practice/Homework.md",
     "Daily Practice/Daily Practice To Do.md",
-    "Shell Scripting.md",
     "find.md",
     "ctime mtime atime.md",
     "Delete History Permanently.md",
@@ -212,7 +213,6 @@
     "new file.md",
     "word count command.md",
     "more and less.md",
-    "Homework Documentation.md",
     "Daily Practice",
     "Linux Administration Task",
     "Pasted image 20250423075520.png",
