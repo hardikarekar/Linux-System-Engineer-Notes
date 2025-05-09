@@ -24,7 +24,8 @@
 * Find Linux supported shells
 	* `cat /etc/shells`
 * How to find current shell
-	* `ps`
+	* `ps` 
+		* Process status
 * How to write a script
 	* `touch /opt/my_script`
 * How to execute a script?
