@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MySQL.md",
+                "file": "Infraservices/MySQL.md",
                 "mode": "source",
                 "source": false
               },
@@ -89,8 +89,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -185,10 +184,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ae5a5494109b674c",
+  "active": "7ef78022364c326c",
   "lastOpenFiles": [
+    "Infraservices",
     "Shell Scripting.md",
-    "MySQL.md",
+    "Infraservices/MySQL.md",
     "Linux Administration Task.md",
     "du commands.md",
     "Daily Practice/Homework.md",
@@ -212,7 +212,6 @@
     "permissions.md",
     "new file.md",
     "word count command.md",
-    "more and less.md",
     "Daily Practice",
     "Linux Administration Task",
     "Pasted image 20250423075520.png",
