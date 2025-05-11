@@ -96,9 +96,38 @@
 				* List files in a package
 					* `rpm -ql package_name`
 			* `yum`
-				* 
+				* Yellowdog Update Modifier
+				* High level package manager build on top of rpm.
+				* Automatically resolves dependencies.
+				* Connects to online or local repositories to install/update packages.
+				* Basic Usage
+					* Install a package
+						* `yum install package_name`
+					* Remove a package
+						* `yum remove package_name`
+					* Update all packages
+						* `yum package_name`
+					* List installed packages 
+						* `yum list installed`
 5}  What is Telnet and its Port No
-6}  How Patching Works
+* Telnet
+	* Telnet is a network protocol used to connect to remote computers over TCP/IP and access the via as a command line interface (CLI).
+	* Key points
+		* Used for remote login and command execution.
+		* Provides text based communication.
+		* Unencrypted, so data (including passwords) is sent in plain text - not secure.
+		* Mostly replaced by SSH in modern systems due to security concerns.
+		* Default port number
+			* `port 23 (TCP)`
+		* Basic usage
+			* `telnet [hostname or IP] [port]`
+		* Example
+			* `telnet 192.168.1.10 23`
+		* Security Note
+			* Telnet should not be used over public networks.
+			* Use SSH (port 22) instead for secure remote access.
+* How Patching Works
+	* Patching is the process of updating software to fix bugs, close security vulnerabilities, or add new features.
 7}  What is Bootprocesse
 8}  How Cron Works 
 9}  What is Shell ,CLI and Source 
