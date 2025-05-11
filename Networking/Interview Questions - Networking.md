@@ -1,4 +1,4 @@
-#networking 
+#interview
  * What is network?
 	 * System of interconnected devices (such as computers, servers, switches, routers and more) that communicate with each other to share resources, data and services.
 	 * Types of networks
