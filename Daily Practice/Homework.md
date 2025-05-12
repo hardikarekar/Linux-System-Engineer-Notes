@@ -16,4 +16,5 @@
 		* Programming Knowledge Channel
 	* Udemy
 * Search `shellscripting+cyberciti`
+* Shell Scripting Practice Daily
 * 

@@ -106,4 +106,36 @@ cp -rv /opt/* /usr/local/src
 	* Example
 		* `ls /not/found 2> error.txt`
 			* Redirects stderr to a file.
+## Test Command
+* Test command evaluates conditional expressions and is often used in shell scripts to check file properties, string comparisons, or numeric values.
+* It returns a status code
+	* `0` for true
+	* `1` for false
+* It is used within `[ ]` in scripts, like `[ condition ]`.
+* Syntax
+	* `test expression`
+	* `[ expression ]`
+## Variable
+* Variable contains value which varies.
+* How to define variables
+	* `a=b`
+		* `a`: variable
+		* `b`: value
+	* `country=india`
+		* `country`: variable
+		* `india`: value
+* Variable are stored in memory.
 
+* How to set environment variable
+	* Edit `/etc/profile`
+		* At end of file, add
+			* `export a=b`
+	* Reload file
+		* `. /etc/profile`
+* Shell variable 
+* Environment variable
+* How to see all variables
+	* `env | less`
+
+* `set`
+	* 
