@@ -42,3 +42,6 @@ CREATE TABLE users (
 	* `SHOW tables;`
 * See table schema
 	* `DESCRIBE users;`
+
+* MySQL default port is `3306`
+* Port Location: `/etc/mysql/my.cnf`{Actual Port Location: `/etc/mysql/mysql.conf.d/mysqld.cnf`}

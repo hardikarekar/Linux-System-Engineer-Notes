@@ -128,7 +128,27 @@
 			* Use SSH (port 22) instead for secure remote access.
 * How Patching Works
 	* Patching is the process of updating software to fix bugs, close security vulnerabilities, or add new features.
-7}  What is Bootprocesse
+	* Patching is done in three ways
+		* Package Updates
+			* Using a package manager to install updates (patches) from official repositories.
+		* Manual source patching
+			* Applying a `.patch` or `.diff` file to source code using the `patch` command.
+		* Kernel patching
+			* Updating or hot-patching the Linux kernel (eg using `livepatch` on Ubuntu)
+	* Patching via Package Manager
+		* `sudo apt update`: Refresh package lists
+		* `sudo apt list--upgradable`: See what's available
+		* `sudo apt upgrade`: Apply available patches
+		* For security patches
+			* `sudo unattended-upgrades`
+	* Manual Patching via `patch` command
+		* When modifying source code
+			* Apply a patch
+				* `patch < fix.patch`
+			* Or for specific files
+				* `patch somefile.c < fix.patch`
+			* 
+7}  What is Bootprocess
 8}  How Cron Works 
 9}  What is Shell ,CLI and Source 
 10}  What is Rysnc and Cp ? How its Work
