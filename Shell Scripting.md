@@ -138,4 +138,13 @@ cp -rv /opt/* /usr/local/src
 	* `env | less`
 
 * `set`
-	* 
+
+**13-May-2025 Lecture**
+if-else
+shebang value
+case condition
+How to take backup interactive
+positional parameter
+Functions
+httpd start
+httpd stop

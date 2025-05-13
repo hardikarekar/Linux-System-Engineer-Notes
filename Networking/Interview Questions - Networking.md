@@ -155,3 +155,5 @@
 			* Advanced DNS query tool.
 		* `nmcli`
 				* Network Manager CLI for managing connections (modern Linux distros).
+* OSI Model
+* 

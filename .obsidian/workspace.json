@@ -35,7 +35,8 @@
               "title": "Interview Questions - Networking"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -67,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#interview",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,8 +89,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -184,13 +184,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ea80fd13b93530b2",
+  "active": "6719d5612a6f2eb9",
   "lastOpenFiles": [
-    "Networking/Interview Questions - Networking.md",
     "top 20 networking commands.md",
+    "internet protocols.md",
+    "Shell Scripting.md",
+    "Networking/Interview Questions - Networking.md",
     "Interview Questions - Linux.md",
     "Shell.md",
-    "Shell Scripting.md",
     "Basic Commands.md",
     "Daily Practice/Homework.md",
     "pipe command.md",
@@ -213,7 +214,6 @@
     "sudoers.md",
     "User Management.md",
     "hard link soft link.md",
-    "Alias.md",
     "Daily Practice",
     "Linux Administration Task",
     "Pasted image 20250423075520.png",

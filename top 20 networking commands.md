@@ -137,9 +137,99 @@ Trace complete.
 		* `ipconfig /renew`
 			* Requests new IP address from DHCP server
 		* `ipconfig /flushdns`
-			* Clears the DNS cache
+			* Clears DNS cache
 		* `ipconfig /displaydns`
 			* Show contents of the DNS cache
 		* `ipconfig /registerdns`
 			* Renews DHCP lease and re-registers DNS records (needs admin)
-	* 
+
+* `route`
+	* Used to view and manage the IP routing table, which determines how computer sends packets to different networks.
+	* Common Commands
+		* `route print`
+			* Displays the current routing table
+		* `route add 192.168.2.0 mask 255.255.255.0 192.168.1.1`
+			* Adds a static route
+		* `route -p add 10.10.10.0 mask 255.255.255.0 192.168.1.1`
+			* Add a persistent route
+		* `route delete 192.168.2.0`
+			* Delete a route
+
+* `hostname`
+	* Used to display name of computer (host) on the network.
+	* Syntax
+		* `hostname`
+	* Change hostname
+		* `Rename-Computer -NewName "NewPCName" -Restart`
+
+* `getmac`
+	* Used to display MAC address of your computer's network adapters.
+	* Basic Syntax
+		* `getmac [options]`
+	* Common Options
+		* `getmac /v /fo list`
+			* `/v`: Verbose
+			* `/fo`: Formats output as a list for easier reading
+
+* `nbtstat`
+	* Used to troubleshoot NetBIOS over TCP/IP.
+	* Displays NetBIOS name, tables and network connections for local and remote computers.
+	* Basic Syntax
+		* `nbtstat [options]`
+	* Common Options
+		* `nbtstat -n`
+			* Shows NetBIOS names registered locally on the computer
+		* `nbtstat -a [hostname]`
+			* Displays NetBIOS table for a remote system using its name
+		* `nbtstat -A [ip address]`
+			* Same as `-a`, but uses IP address instead of name
+		* `nbtstat -c`
+			* Shows NetBIOS name cache 
+
+* `tasklist`
+	* Displays list of all running processes on your system, including
+		* process IDs (PID)
+		* memory usage
+		* user that owns them
+	* Basic Syntax
+		* `tasklist [options]`
+
+* `taskkill`
+	* Used to terminate running processes by their PID or image name.
+	* Basic Syntax
+		* `taskkill /pid [PID}`
+		* `taskkill /im [image name]`
+	* Kill a process
+		* `taskkill /pid 1234`
+	* Force kill
+		* `taskkill /pid 1234 /f`
+
+* `systeminfo`
+	* Displays detailed information about computer's hardware, operating system, network and update history.
+	* Syntax
+		* `systeminfo`
+
+* `netsh`
+	* Allows to display and modify the network configuration of a computer.
+	* It is powerful for managing network settings like
+		* IP addresses
+		* firewall
+		* rules
+		* port forwarding
+		* wireless networks
+	* Common Uses
+		* View network configuration
+			* `netsh interface ip show config`
+		* Set static ip address
+			* `netsh interface ip set address name="Ethernet" static 192.168.1.100 255.255.255.0 192.168.1.1`
+* `net view`
+	* Used to display a set of network resources, such as shared computers and devices on your local network (LAN).
+	* Common Usage
+		* `net view`
+			* View all devices on the network
+		* `net view \\ComputerName`
+			* View shared resources on a specific computer
+		* `net view /domain:YourDomainName`
+			* View devices in a specific domain
+
+* msinfo32
