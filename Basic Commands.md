@@ -20,7 +20,12 @@
 			* timestamp
 			* file or directory name
 			* file size
-* Change directory:
+	* `ls -ltrh`
+		* `-l`: Long format
+		* `-t`: Sort by modification time (newest first)
+		* `-r`: Reverse the sort order (newest last)
+		* `-h`: Human readable sizes
+* Change directory:xxx
 	* `cd <directory>`
 	* `cd /home/user` --> go to that directory.
 	* `cd ..` --> go up one level.
