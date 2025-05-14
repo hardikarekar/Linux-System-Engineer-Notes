@@ -17,4 +17,14 @@
 	* Udemy
 * Search `shellscripting+cyberciti`
 * Shell Scripting Practice Daily
-* 
+* Scripting
+	* awk
+	* gawk
+	* egrep
+	* sort
+	* cut
+	* break
+	* trap
+	* sed
+	* tee
+* 40 scripts

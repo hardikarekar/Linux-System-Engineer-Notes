@@ -146,5 +146,18 @@ case condition
 How to take backup interactive
 positional parameter
 Functions
-httpd start
-httpd stop
+
+* For Loop
+	* Is a control flow statement that allows you to repeatedly execute a block of code for each item in a list of items.
+```shell
+for salman in {1..10}; do echo $salman; done;
+```
+```shell
+for i in {1..10}; do touch /files/file$i; done;
+```
+
+* While Loop 
+* Until Loop
+* echo $path
+
+

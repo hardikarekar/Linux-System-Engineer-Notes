@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "top 20 networking commands.md",
+                "file": "Shell Scripting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "top 20 networking commands"
+              "title": "Shell Scripting"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking/Interview Questions - Networking.md",
+                "file": "Daily Practice/Homework.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Interview Questions - Networking"
+              "title": "Homework"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "internet protocols"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "#interv",
+                "query": "#linux",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -199,17 +198,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6719d5612a6f2eb9",
+  "active": "ea80fd13b93530b2",
   "lastOpenFiles": [
-    "internet protocols.md",
-    "Networking/Interview Questions - Networking.md",
-    "top 20 networking commands.md",
-    "Pasted image 20250514082129.png",
+    "Daily Practice/Homework.md",
     "Shell Scripting.md",
+    "top 20 networking commands.md",
+    "Networking/Interview Questions - Networking.md",
+    "internet protocols.md",
+    "Pasted image 20250514082129.png",
     "Interview Questions - Linux.md",
     "Shell.md",
     "Basic Commands.md",
-    "Daily Practice/Homework.md",
     "pipe command.md",
     "Infraservices/MySQL.md",
     "Vim.md",
