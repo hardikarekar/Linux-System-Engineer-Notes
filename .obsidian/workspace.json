@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "#interv",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -186,10 +187,11 @@
   },
   "active": "6719d5612a6f2eb9",
   "lastOpenFiles": [
+    "Pasted image 20250514082129.png",
     "top 20 networking commands.md",
+    "Networking/Interview Questions - Networking.md",
     "internet protocols.md",
     "Shell Scripting.md",
-    "Networking/Interview Questions - Networking.md",
     "Interview Questions - Linux.md",
     "Shell.md",
     "Basic Commands.md",
@@ -213,7 +215,6 @@
     "Delete History Permanently.md",
     "sudoers.md",
     "User Management.md",
-    "hard link soft link.md",
     "Daily Practice",
     "Linux Administration Task",
     "Pasted image 20250423075520.png",
