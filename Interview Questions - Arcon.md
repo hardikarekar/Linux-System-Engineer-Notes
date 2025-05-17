@@ -286,10 +286,24 @@
 		* Server Administration
 
 * Default port for RDP
+	* `3389`
+## Database:
+* Difference between DDL and DML. 
+
+| Feature         | DDL                                            | DML                                     |
+| --------------- | ---------------------------------------------- | --------------------------------------- |
+| Purpose         | Defines and manages structure of a database    | Manipulates data inside the objects     |
+| Operations      | Create, modify, or delete tables, schemas,etc. | Insert, update, delete or fetch records |
+| Common Commands | `CREATE` `ALTER` `DROP` `TRUNCATE`             | `INSERT` `UPDATE` `DELETE` `SELECT`     |
+| Effect on data  | Affects schema, not the actual data            | Directly affects the data stored        |
+| Auto Commit     | Yes changes are saved immediately              | No needs `COMMIT` to save changes       |
+| Used By         | Database administrators / developers           | Application developers / users          |
+	* DDL Example
+
+
+
+* Difference between alter and update
 	* 
-Database: 
--Difference between DDL and DML. 
--Difference between alter and update. 
 -Difference between drop, truncate and delete. 
 -Default port for MSSQL and MySQL. 
 -Steps to take DB backup under SSMS. 
