@@ -78,11 +78,12 @@
 		* `ip a`
 	* For windows
 		* `ipconfig`
-	* 
 
 * Command to identify hostname of your own system.
 	* `hostname`
 	* `uname -n`
+
+* `netstat`: Display network status and protocol statistics
 
 * Operating systems: Difference between Desktop OS and Server OS. 
 
@@ -241,7 +242,10 @@
 			* gives access to shared folders, printers and email
 
 * What is a cluster?
-	* 
+	* Group of connected computers (nodes) that work together as a single system to provide
+		* High Availability
+		* Load Balancing 
+		* Redundancy
 
 * What is the registry? 
 	* Windows registry is a centralized database that stores
@@ -254,20 +258,7 @@
 		* Operating System: Boot settings, system behavior
 		* Installed Software: License keys, paths, settings
 		* User Profiles: Desktop background, screen saver, themes
-		* Hardware: Device drivers, plug and play settings
-	* Registry Structure
-		* Organized in a tree-like structure, similar to folders and files.
-		* Top-level sections (called "hives"):
-			* `HKEY_LOCAL_MACHINE (HKLM)`
-				* System wide settings and hardware config
-			* `HKEY_CURRENT_USER (HKCU)`
-				* Settings for currently logged in user
-			* `HKEY_CLASSES_ROOT (HKCR)`
-				* File associations and COM object info 
-			* `HKEY_USERS`
-				* Settings for all users in the system
-			* `HKEY_CURRENT_CONFIG (HKCC)`
-				* Current hardware profile settings
+		* Hardware: Device drivers, plug and play setting
 		* Accessing the registry
 			* Press `Win+r`
 			* `regedit`
@@ -287,6 +278,39 @@
 
 * Default port for RDP
 	* `3389`
+
+* LDAP
+	* Lightweight Directory Access Protocol
+	* Used to access and manage directory services over a network.
+	* Think of LDAP as
+		* digital phonebook for your organization’s IT environment — storing usernames, passwords, email addresses, devices, groups, and more — all in a centralized database.
+	* Common uses 
+		* Authentication
+			* Login validation for users across systems.
+		* Centralized user management
+			* Manage users, passwords and access in one place.
+		* Organizational structure
+			* Store company hierarchy (users, groups, departments)
+		* App integration
+			* Apps like Git, Jenkins, or JIRA use LDAP to authenticate users
+	* LDAP is often used with
+		* Active Directory
+			* Microsoft's LDAP based directory service
+		* OpenLDAP
+			* Open source LDAP server for Linux
+
+	* Default port
+		* LDAP: `389`
+		* LDAPS: `636`
+		* Telnet: `23`
+		* SSH: `22`
+		* RDP: `3389`
+		* MSQL: `1433`
+
+* LDAPS
+	* LDAP Secure
+	* Encrypted Version of LDAP
+	* Communication between the client and the LDAP server is secured using SSL/TLS
 ## Database:
 * Difference between DDL and DML. 
 
@@ -298,13 +322,68 @@
 | Effect on data  | Affects schema, not the actual data            | Directly affects the data stored        |
 | Auto Commit     | Yes changes are saved immediately              | No needs `COMMIT` to save changes       |
 | Used By         | Database administrators / developers           | Application developers / users          |
-	* DDL Example
-
-
+* DDL Example
+```sql
+CREATE TABLE students (
+  id INT,
+  name VARCHAR(50)
+);
+```
+* DML Example
+```sql
+INSERT INTO students (id, name) VALUES (1, 'John');
+```
 
 * Difference between alter and update
-	* 
--Difference between drop, truncate and delete. 
--Default port for MSSQL and MySQL. 
--Steps to take DB backup under SSMS. 
+
+| Feature    | Alter                                         | Update                                |
+| ---------- | --------------------------------------------- | ------------------------------------- |
+| Purpose    | Changes the structure of a table              | Changes the data inside a table       |
+| Type       | DDL (Data Definition Language)                | DML (Data Manipulation Language)      |
+| Used for   | Add/remove columns, change data types, rename | Modify values in rows/records         |
+| Affects    | The schema (design) of the table              | The content (data) of the table       |
+| Common Use | Schema management by DBA                      | Data updates by users or applications |
+Example of Alter
+```sql
+UPDATE employees
+SET salary = 60000
+WHERE id = 5;
+```
+* This adds a new column to the table.
+Example of Update
+```sql
+UPDATE employees
+SET salary = 60000
+WHERE id = 5;
+```
+* This modifies the value if the `salary` column for one employee.
+
+* Difference between drop, truncate and delete.
+
+| Feature  | Drop                               | Truncate                                      | Delete                                  |
+| -------- | ---------------------------------- | --------------------------------------------- | --------------------------------------- |
+| Purpose  | Removes entire table               | Remove all rows from table                    | Remove specific rows from table         |
+| Affects  | Table structure & data             | Data only (structure remains)                 | Data only (structure remains)           |
+| Rollback | Not recoverable                    | May or may not be recoverable depends on DBMS | Recoverable if wrapped in a transaction |
+| Speed    | Fastest (completely removes table) | Very fast (no row-by-row logging)             | Slow (logs each row deletion)           |
+| Type     | DDL                                | DDL                                           | DML                                     |
+* `DROP`
+	* `DROP TABLE employees;`
+		* Deletes the entire `employees` table (data + structure)
+* `TRUNCATE`
+	* `TRUNCATE TABLE employees;`
+		* Deletes all records but keeps the table structure
+* `DELETE`
+	* `DELETE FROM employees WHERE department = 'HR';`
+		* Deletes only the HR employees.
+
+* Default port for MSSQL and MySQL.
+	* Microsoft SQL Server 
+		* Default Port: `1433`
+		* Used for client connections to SQL server
+	* MySQL
+		* Default port: `3306`
+		* Used for client connections to MySQL
+
+* Steps to take DB backup under SSMS. 
 -SSMS query to take DB backup.

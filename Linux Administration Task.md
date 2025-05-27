@@ -253,6 +253,18 @@ init 6   # Reboot
 		* `-type f` only files.
 		* `-size =100k` files more than 100 kilobytes.
 		* `>` redirect the output into `/opt/hardik`
+
+## 18.a check size with `du` cmd of kernel and `initramfs/dracut/initrd` file under `/boot`
+* Check size of kernel and `/initramfs/dracut/initrd` files under `/boot` using the `du` command
+	* `du -h /boot/vmlinuz* /boot/initramfs* /boot/initrd 2>/dev/null`
+		* `du -h`: Disk usage command with human readable format
+		* `/boot/vmlinuz*`: Kernel images
+		* `/boot/initramfs*`: Initramfs images
+		* `/boot/initrd*`: Older initrd-style images.
+		* `2>/dev/null`: Suppress any errors
+	* If you want a total size summary at the end
+		* ``
+
 ## 39a. Create 2 user, del 1 user without data and 1 with data
 * Create two users
 	* `useradd Wilson`
