@@ -263,7 +263,10 @@ init 6   # Reboot
 		* `/boot/initrd*`: Older initrd-style images.
 		* `2>/dev/null`: Suppress any errors
 	* If you want a total size summary at the end
-		* ``
+		* `du -ch /boot/vmlinuz* /boot/initramfs* /boot/initrd* 2>/dev/null`
+
+## 18d. check each file size in `/dev` and `/proc` folder
+* 
 
 ## 39a. Create 2 user, del 1 user without data and 1 with data
 * Create two users
