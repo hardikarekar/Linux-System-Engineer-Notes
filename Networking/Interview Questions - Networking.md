@@ -281,37 +281,23 @@ Final
 	* Firewalls can be hardware devices, software applications, or a combination of both. 
 	* They help prevent **unauthorized access**, **malware**, and **cyberattacks** by filtering traffic and blocking suspicious connections. 
 	* Firewalls are essential in both personal devices and enterprise networks to maintain data security and network integrity.
-* SSL
-	* **SSL (Secure Sockets Layer)** is a security protocol that encrypts data transmitted between a user's browser and a web server. 
-	* It ensures that sensitive information like passwords, credit card numbers, and personal details remain private and protected from eavesdropping. Websites using SSL have URLs that start with **https://** instead of **http://**, and often show a padlock icon in the browser. 
-	* SSL uses a system of **public and private keys** to securely exchange data over the internet. 
-* TCP/IP
-	* **TCP/IP (Transmission Control Protocol/Internet Protocol)** is the foundational communication protocol suite for the internet and most networks. **IP** handles addressing and routing, ensuring data packets reach the correct destination, while **TCP** ensures reliable delivery by managing data flow, error checking, and retransmission. TCP/IP breaks data into packets, sends them across networks, and reassembles them at the receiving end. It supports various protocols like HTTP, FTP, SMTP, and DNS, enabling different types of communication. TCP/IP's layered architecture (Application, Transport, Internet, and Network Access) makes it scalable, robust, and adaptable to different technologies.
-* UDP
-	* **UDP (User Datagram Protocol)** is a communication protocol used for sending data over a network without establishing a connection. It is **faster** than TCP because it does **not guarantee delivery**, ordering, or error correction of packets. UDP is ideal for real-time applications like **video streaming**, **online gaming**, and **VoIP**, where speed is more important than reliability. Each UDP packet, called a **datagram**, is sent independently and may arrive out of order or not at all. Because of its lightweight nature, UDP is commonly used where low latency is critical.
+* SSL (Secure Socket Layer)
+	* Security protocol that encrypts data transmitted between user's browser and web server. 
+	* It ensures that sensitive information like passwords, credit card numbers, personal details remain private and protected from eavesdropping. 
+	* Websites using SSL have URLs that start with https:// 
+	* SSL uses a system of public and private keys to securely exchange data over the internet. 
+* TCP/IP (Transmission Control Protocol / Internet Protocol)
+	* Communication protocol suite for the internet and most networks. 
+	* IP handles addressing and routing, ensuring data packets reach the correct destination
+	* TCP ensures reliable delivery by managing data flow, error checking, and retransmission. 
+	* TCP/IP breaks data into packets, sends them across networks, and reassembles them at the receiving end. 
+	* It supports various protocols like HTTP, FTP, SMTP, and DNS, enabling different types of communication. 
+	* TCP/IP's layered architecture (Application, Transport, Internet, and Network Access) makes it scalable, robust, and adaptable to different technologies.
+* UDP (User Datagram Protocol)
+	* Communication protocol used for sending data over a network without establishing a connection. 
+	* It is faster than TCP because it does not guarantee delivery, ordering, or error correction of packets. 
+	* UDP is ideal for real-time applications like video streaming, online gaming, and VoIP, where speed is more important than reliability. 
+	* Each UDP packet, called a datagram, is sent independently and may arrive out of order or not at all. 
+	* Because of its lightweight nature, UDP is commonly used where low latency is critical.
 * ncpa.cpl
 * sysdm.cpl
-* |   |   |
-|---|---|
-`free -h`: Shows memory usage in human-readable format
-
-
-|          |                                            |
-| -------- | ------------------------------------------ |
-| `vmstat` | Displays memory, CPU, and system processes |
-
-
-Change ip 
-`sudo ip addr add 192.168.1.100/24 dev eth0` 
-`sudo ip route add default via 192.168.1.1`
-Cron fields
-```scss
-* * * * * command_to_run
-│ │ │ │ │
-│ │ │ │ └───── Day of the week (0 - 7) (Sunday=0 or 7)
-│ │ │ └──────── Month (1 - 12)
-│ │ └──────────── Day of the month (1 - 31)
-│ └──────────────── Hour (0 - 23)
-└──────────────────── Minute (0 - 59)
-```
-
