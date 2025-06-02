@@ -7,6 +7,12 @@ MDF LDF
 
 Online Subnet Calculator `search on google`
 
-`lspci` `demesg`
+`lspci` 
+* Used to list all PCI drivers on your system (eg, graphics card, network card, sound cards, etc)
+* Basic Usage
+	* `lspci`
+* Show detailed info
+	* `lspci -v`
+`demesg`
 
 network driver

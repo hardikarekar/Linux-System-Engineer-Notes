@@ -268,6 +268,9 @@ init 6   # Reboot
 ## 18d. check each file size in `/dev` and `/proc` folder
 * 
 
+## 19 f. Get harddisk | scsi | video | audio | Ethernet details with dmesg
+
+
 ## 39a. Create 2 user, del 1 user without data and 1 with data
 * Create two users
 	* `useradd Wilson`
